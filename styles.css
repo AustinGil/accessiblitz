@@ -1,0 +1,50 @@
+:root {
+  --purple: #491e89;
+  --green: #4adb9e;
+  --yellow: #e8d75c;
+  --red: #ed2f68;
+  --blue: #02527c;
+
+  --highlight: var(--blue);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  background: var(--highlight);
+}
+
+.header a {
+  padding: 5px 10px;
+  color: inherit;
+}
+
+.logo,
+.menu {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 20px;
+}
