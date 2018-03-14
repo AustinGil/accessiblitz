@@ -1,8 +1,4 @@
 :root {
-  --purple: #491e89;
-  --green: #4adb9e;
-  --yellow: #e8d75c;
-  --red: #ed2f68;
   --blue: #02527c;
   --grey: #dddddd;
 
@@ -68,6 +64,10 @@ a {
 
 .section {
   margin-bottom: 100px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
 
 .grid {
