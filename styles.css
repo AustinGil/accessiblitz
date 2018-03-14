@@ -4,14 +4,20 @@
   --yellow: #e8d75c;
   --red: #ed2f68;
   --blue: #02527c;
+  --grey: #dddddd;
 
   --highlight: var(--blue);
+}
+
+a {
+  color: var(--highlight);
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
   color: #fff;
@@ -34,12 +40,23 @@
   align-items: center;
 }
 
+.menu {
+  cursor: pointer;
+}
+
 .nav {
   display: none;
+  position: absolute;
+  top: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   list-style-type: none;
+  background: var(--highlight);
+}
+
+.nav.open {
+  display: block;
 }
 
 .main {
@@ -47,4 +64,86 @@
   margin-left: auto;
   margin-right: auto;
   padding: 50px 20px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.options,
+.checkboxes {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.option,
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option:before,
+.checkbox:before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  border: 2px solid var(--grey);
+  transition: all 0.15s ease;
+}
+
+.option:before {
+  border-radius: 50%;
+}
+
+.option.active:before,
+.checkbox.active:before {
+  background: var(--highlight);
+}
+
+.switch {
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border: 2px solid var(--grey);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.switch:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--grey);
+  transition: all 0.3s ease;
+}
+
+.switch.active:before {
+  left: 100%;
+  transform: translateX(-100%);
+  background: var(--highlight);
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--grey);
 }
