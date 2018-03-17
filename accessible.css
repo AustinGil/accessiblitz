@@ -1,0 +1,8 @@
+.nav {
+  display: unset;
+  top: -100vh;
+}
+
+.nav.open {
+  top: 100%;
+}
