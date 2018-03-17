@@ -33,3 +33,30 @@
   background-color: #fff;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
+
+.custom-radio {
+  display: block;
+}
+
+.custom-radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-radio-label:before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  border: 2px solid var(--grey);
+  transition: all 0.15s ease;
+}
+
+.custom-radio-label:before {
+  border-radius: 50%;
+}
+
+input:checked + .custom-radio-label:before {
+  background: var(--highlight);
+}
