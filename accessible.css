@@ -60,3 +60,9 @@
 input:checked + .custom-radio-label:before {
   background: var(--highlight);
 }
+
+input:focus + .custom-radio-label:before {
+  outline-style: auto;
+  outline-color: -webkit-focus-ring-color;
+  outline-color: invert;
+}
