@@ -5,3 +5,17 @@ menu.addEventListener('keydown', event => {
     event.target.click()
   }
 })
+
+jsSearchers.forEach(el => {
+  el.removeEventListener('keydown', jsSearch)
+  el.addEventListener('submit', event => {
+    event.preventDefault()
+
+    const searchInput = el.querySelector('.js-search-input')
+
+    if (searchInput && searchInput.value) {
+      alert(`You searched for ${searchInput.value}`)
+      searchInput.value = ''
+    }
+  })
+})
