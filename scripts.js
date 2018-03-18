@@ -1,20 +1,16 @@
 const nav = document.querySelector('.nav')
 const menu = document.querySelector('.menu')
-const options = Array.from(document.querySelectorAll('.option'))
-const checkboxes = Array.from(document.querySelectorAll('.checkbox'))
+const customRadios = Array.from(document.querySelectorAll('.customRadio'))
+const customCheckboxes = Array.from(
+  document.querySelectorAll('.customCheckbox')
+)
 const switches = Array.from(document.querySelectorAll('.switch'))
 
 menu.addEventListener('click', () => {
   nav.classList.toggle('open')
 })
 
-switches.forEach(el => {
-  el.addEventListener('click', e => {
-    e.target.classList.toggle('active')
-  })
-})
-
-options.forEach(el => {
+customRadios.forEach(el => {
   el.addEventListener('click', e => {
     const previousEl = el.parentElement.querySelector('.active')
     if (previousEl) previousEl.classList.remove('active')
@@ -23,7 +19,13 @@ options.forEach(el => {
   })
 })
 
-checkboxes.forEach(el => {
+customCheckboxes.forEach(el => {
+  el.addEventListener('click', e => {
+    e.target.classList.toggle('active')
+  })
+})
+
+switches.forEach(el => {
   el.addEventListener('click', e => {
     e.target.classList.toggle('active')
   })

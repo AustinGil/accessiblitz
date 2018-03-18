@@ -85,21 +85,21 @@ a {
   object-fit: cover;
 }
 
-.options,
-.checkboxes {
+.custom-radios,
+.custom-checkboxes {
   padding-left: 0;
   list-style-type: none;
 }
 
-.option,
-.checkbox {
+.custom-radio,
+.custom-checkbox {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
-.option:before,
-.checkbox:before {
+.custom-radio:before,
+.custom-checkbox:before {
   content: '';
   width: 1em;
   height: 1em;
@@ -108,16 +108,17 @@ a {
   transition: all 0.15s ease;
 }
 
-.option:before {
+.custom-radio:before {
   border-radius: 50%;
 }
 
-.option.active:before,
-.checkbox.active:before {
+.custom-radio.active:before,
+.custom-checkbox.active:before {
   background: var(--highlight);
 }
 
 .switch {
+  display: block;
   position: relative;
   width: 40px;
   height: 24px;
