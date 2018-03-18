@@ -32,11 +32,13 @@ switches.forEach(el => {
   })
 })
 
+function jsSearch(event) {
+  if (event.keyCode === 13 && event.target.value) {
+    alert(`You searched for ${event.target.value}`)
+    event.target.value = ''
+  }
+}
+
 jsSearchers.forEach(el => {
-  el.addEventListener('keydown', event => {
-    if (event.keyCode === 13 && event.target.value) {
-      alert(`You searched for ${event.target.value}`)
-      event.target.value = ''
-    }
-  })
+  el.addEventListener('keydown', jsSearch)
 })
