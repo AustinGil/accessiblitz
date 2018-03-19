@@ -12,9 +12,9 @@ jsSearchers.forEach(el => {
     event.preventDefault()
 
     const searchInput = el.querySelector('.js-search-input')
-
     if (searchInput && searchInput.value) {
       alert(`You searched for ${searchInput.value}`)
+      window.location.search = `${searchInput.name}=${searchInput.value}`
       searchInput.value = ''
     }
   })
