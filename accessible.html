@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
 	<meta charset="utf-8">
@@ -12,10 +12,16 @@
 	<link rel="stylesheet" type="text/css" href="https://rawgit.com/Stegosource/basicss/master/basicss.css">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="accessible.css">
+	<script>
+		// Prevents flash of unstyle cotnent for JS manipulated elements.
+		document.querySelector('html').classList.remove('no-js');
+	</script>
 </head>
 
 <body>
 	<a href="#main-content-anchor" class="screen-reader-text">Skip To Content</a>
+	<input type="checkbox" id="menu-toggler">
+
 	<div class="header">
 		<a href="/" class="logo">
 			<span class="screen-reader-text">Home - My Awesome Website</span>
@@ -24,12 +30,12 @@
 			</svg>
 		</a>
 
-		<div class="menu" tabindex="0">
+		<label for="menu-toggler" class="menu" tabindex="0">
 			<span class="screen-reader-text">Toggle Menu</span>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
 				<path d="M96 192h576v64.5H96V192zm0 223.5v-63h576v63H96zM96 576v-64.5h576V576H96z" />
 			</svg>
-		</div>
+		</label>
 
 		<ul class="nav">
 			<li>
@@ -150,6 +156,11 @@
 				<button type="submit" class="screen-reader-text">Submit</button>
 			</form>
 		</div>
+
+		<noscript>
+			<p>This content is only visible when JavaScript is turned off.</p>
+			<br>
+		</noscript>
 
 		<div class="section">
 			<p>Across the centuries tendrils of gossamer clouds concept of the number one, Hypatia. Rig Veda. Science bits of moving fluff, white dwarf trillion, venture dream of the mind's eye.</p>

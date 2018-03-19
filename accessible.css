@@ -1,9 +1,13 @@
+#menu-toggler {
+  display: none;
+}
+
 .nav {
   display: unset;
   top: -100vh;
 }
 
-.nav.open {
+#menu-toggler:checked + .header .nav {
   top: 100%;
 }
 
@@ -96,4 +100,10 @@ input:focus + .switch-control {
   outline-style: auto;
   outline-color: -webkit-focus-ring-color;
   outline-color: invert;
+}
+
+.no-js button[type='submit'] {
+  position: relative;
+  width: auto;
+  height: auto;
 }

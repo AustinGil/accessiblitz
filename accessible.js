@@ -7,7 +7,7 @@ menu.addEventListener('keydown', event => {
 })
 
 jsSearchers.forEach(el => {
-  el.removeEventListener('keydown', jsSearch)
+  // el.removeEventListener('keydown', jsSearch)
   el.addEventListener('submit', event => {
     event.preventDefault()
 
