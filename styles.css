@@ -145,6 +145,18 @@ a {
   background: var(--highlight);
 }
 
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.social-link {
+  max-width: 100px;
+  padding: 5%;
+}
+
 .footer {
   padding: 20px;
   text-align: center;
