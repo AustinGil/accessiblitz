@@ -23,6 +23,7 @@ h3,
 
 p,
 .p {
+  margin: 0 0 1rem;
   font-size: 1rem;
   font-weight: 100;
 }
