@@ -169,8 +169,9 @@ a {
 }
 
 .social-link {
+  width: 100%;
   max-width: 100px;
-  padding: 5%;
+  padding: 20px;
 }
 
 .footer {
