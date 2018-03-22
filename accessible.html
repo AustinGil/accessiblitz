@@ -22,7 +22,8 @@
 	<a href="#main-content-anchor" class="screen-reader-text">Skip To Content</a>
 	<input type="checkbox" id="menu-toggler">
 
-	<div class="header">
+	</footer>
+	<header role="banner" class="header">
 		<a href="/" class="logo">
 			<span class="screen-reader-text">Home - My Awesome Website</span>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
@@ -37,23 +38,25 @@
 			</svg>
 		</label>
 
-		<ul class="nav">
-			<li>
-				<a href="/home">Home</a>
-			</li>
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/settings">Settings</a>
-			</li>
-			<li>
-				<a href="/contact">Contact</a>
-			</li>
-		</ul>
-	</div>
+		<nav role="navigation" class="nav">
+			<ul role="menubar">
+				<li role="menuitem">
+					<a href="/home">Home</a>
+				</li>
+				<li role="menuitem">
+					<a href="/about">About</a>
+				</li>
+				<li role="menuitem">
+					<a href="/settings">Settings</a>
+				</li>
+				<li role="menuitem">
+					<a href="/contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-	<div id="main-content-anchor" class="main">
+	<main role="main" id="main-content-anchor" class="main">
 		<h1>Accessible Design Patterns</h1>
 
 		<div class="section grid">
@@ -173,9 +176,9 @@
 
 			<p>Ut enim ad minima veniam stirred by starlight, realm of the galaxies, brain is the seed of intelligence. Galaxies a very small stage in a vast cosmic arena a mote of dust suspended in a sunbeam nisi ut aliquid ex ea commodi consequatur?</p>
 		</div>
-	</div>
+	</main>
 
-	<div class="footer">
+	<footer role="contentinfo" class="footer">
 		<div class="social">
 			<a href="https://twitter.com/Stegosource" class="social-link">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 448">
@@ -197,7 +200,7 @@
 		</div>
 		&lt;/&gt; with ❤ by
 		<a href="https://stegosource.com">Stegosource</a>
-	</div>
+	</footer>
 
 	<script src="scripts.js"></script>
 	<script src="accessible.js"></script>
