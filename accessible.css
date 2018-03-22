@@ -133,8 +133,10 @@ input:focus + .switch-control {
   outline-color: invert;
 }
 
-.no-js button[type="submit"] {
-  position: relative;
-  width: auto;
-  height: auto;
+.js-hidden {
+  display: none;
+}
+
+.no-js .js-hidden {
+  display: block;
 }
