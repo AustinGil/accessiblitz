@@ -32,13 +32,14 @@ p,
   display: none;
 }
 
-.nav {
-  display: unset;
-  top: -100vh;
+.nav ul {
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
 }
 
 #menu-toggler:checked + .header .nav {
-  top: 100%;
+  display: block;
 }
 
 .screen-reader-text,
@@ -89,7 +90,7 @@ p,
 
 .custom-radio-label:before,
 .custom-checkbox-label:before {
-  content: '';
+  content: "";
   width: 1em;
   height: 1em;
   margin-right: 0.5em;
@@ -107,7 +108,7 @@ input:checked + .custom-checkbox-label:before {
 }
 
 .switch-control {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -132,7 +133,7 @@ input:focus + .switch-control {
   outline-color: invert;
 }
 
-.no-js button[type='submit'] {
+.no-js button[type="submit"] {
   position: relative;
   width: auto;
   height: auto;
