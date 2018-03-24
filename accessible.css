@@ -1,47 +1,3 @@
-h1,
-.h1 {
-  font-size: 2.5rem;
-}
-
-h2,
-.h2 {
-  font-size: 2rem;
-}
-
-h3,
-.h3 {
-  font-size: 1.5rem;
-}
-
-.h1,
-.h2,
-.h3 {
-  margin: 0 0 0.5rem;
-  font-weight: 700;
-  line-height: 1.25em;
-}
-
-p,
-.p {
-  margin: 0 0 1rem;
-  font-size: 1rem;
-  font-weight: 100;
-}
-
-#menu-toggler {
-  display: none;
-}
-
-.nav ul {
-  margin: 0;
-  padding: 10px 0;
-  list-style-type: none;
-}
-
-#menu-toggler:checked + .header .nav {
-  display: block;
-}
-
 .screen-reader-text,
 .visually-hidden {
   border: 0;
@@ -70,13 +26,41 @@ p,
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-fieldset {
-  border: 0;
-  padding: 0;
+#menu-toggler {
+  display: none;
 }
 
-legend {
+.nav {
+  display: unset;
+  padding: unset;
+}
+
+.nav ul {
+  margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+#menu-toggler:checked + .header .nav ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#menu-toggler:checked + .header .nav .screen-reader-text,
+#menu-toggler:checked + .header .nav .screen-reader-text:focus {
+  display: block;
+  position: relative;
+  top: initial;
+  left: initial;
+  z-index: initial;
+  height: auto;
+  width: auto;
+  line-height: normal;
+  padding: 5px 10px;
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+  clip: auto !important;
 }
 
 .custom-radio {
@@ -140,6 +124,45 @@ input:focus + .switch-control {
   outline-style: auto;
   outline-color: -webkit-focus-ring-color;
   outline-color: invert;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
+}
+
+.h1,
+.h2,
+.h3 {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  line-height: 1.25em;
+}
+
+p,
+.p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 .js-hidden {
