@@ -70,6 +70,15 @@ p,
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }
 
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
 .custom-radio {
   display: block;
 }
