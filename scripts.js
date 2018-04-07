@@ -1,8 +1,8 @@
 const nav = document.querySelector(".nav")
 const menu = document.querySelector(".menu")
-const customRadios = Array.from(document.querySelectorAll(".customRadio"))
+const customRadios = Array.from(document.querySelectorAll(".custom-radio"))
 const customCheckboxes = Array.from(
-  document.querySelectorAll(".customCheckbox")
+  document.querySelectorAll(".custom-checkbox")
 )
 const switches = Array.from(document.querySelectorAll(".switch"))
 const jsSearchers = Array.from(document.querySelectorAll(".js-search"))

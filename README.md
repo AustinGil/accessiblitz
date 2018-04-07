@@ -2,7 +2,28 @@
 
 Let's make the web more accessible together.
 
-#### Steps:
+#### What is Accessibility?
+
+When we talk about accessibility in web development, a lot of people jump to the assumption that we mean making websites that blind people can use. While that is certainly part of it, that's really just one specific demographic of users. In fact, accessibility affects many different demographics, and it can be broken down to the simple concept:
+
+Users should be able to access the contents of your website independent on their circumstances.
+
+#### What are some circumstances that might make your website inaccessible?
+
+* Visual impairment relying on screen-readers and keyboard navigation
+* Physical or mental impairments so the mouse cannot be used
+* Color-blindness or fuzzy vision making it hard to read small text
+* Technical limitations such as connectivity, screen size, or browsers
+
+#### Why it's important
+
+* Accessible sites means more users, which may have an impact your goals
+* There's a growing number of web-accessibility-related lawsuits
+* If you are a govenment funded institution, you HAVE to be accessible
+* Accessible design patterns often encourage better development practices
+* It's just the right thing to do
+
+#### Steps to make things more accessible:
 
 1.  Visually hidden content for screen readers.
 2.  Toggle menu visibility with just the keyboard.
@@ -17,6 +38,12 @@ Let's make the web more accessible together.
 11. Switch to using semantic markup.
 12. Make external links open in same tab.
 13. Things work with or without JavaScript.
+
+Other considerations no covered here:
+
+* Color contrast
+* Font-size and legibility
+*
 
 ### Helpful Tools & Resources
 
