@@ -1,0 +1,187 @@
+:root {
+  --blue: #02527c;
+  --grey: #dddddd;
+
+  --highlight: var(--blue);
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--highlight);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  color: #fff;
+  background: var(--highlight);
+}
+
+.header a {
+  color: inherit;
+}
+
+.logo,
+.menu {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  display: block;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px 0;
+  list-style-type: none;
+  background: var(--highlight);
+}
+
+.nav.open {
+  display: block;
+}
+
+.nav a {
+  padding: 5px 10px;
+}
+
+.main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 20px;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.custom-radios,
+.custom-checkboxes {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.custom-radio,
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-radio:before,
+.custom-checkbox:before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  border: 2px solid var(--grey);
+  transition: all 0.15s ease;
+}
+
+.custom-radio:before {
+  border-radius: 50%;
+}
+
+.custom-radio.active:before,
+.custom-checkbox.active:before {
+  background: var(--highlight);
+}
+
+.switch {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 24px;
+  border: 2px solid var(--grey);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.switch:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--grey);
+  transition: all 0.3s ease;
+}
+
+.switch.active:before {
+  left: 100%;
+  transform: translateX(-100%);
+  background: var(--highlight);
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+.social-link {
+  width: 100%;
+  max-width: 100px;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--grey);
+}
