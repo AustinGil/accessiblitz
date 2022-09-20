@@ -16,20 +16,20 @@ export default function () {
         </svg>
       </div>
 
-      <ul className={`nav ${isOpen ? 'open' : ''}`}>
-        <li>
+      <div className={`nav ${isOpen ? 'open' : ''}`}>
+        <div>
           <a href="#">Home</a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#">About</a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#">Settings</a>
-        </li>
-        <li>
+        </div>
+        <div>
           <a href="#">Contact</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   )
 }

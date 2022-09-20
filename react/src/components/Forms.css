@@ -1,0 +1,32 @@
+
+.custom-radios,
+.custom-checkboxes {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.custom-radio,
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-radio:before,
+.custom-checkbox:before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  border: 2px solid var(--grey);
+  transition: all 0.15s ease;
+}
+
+.custom-radio:before {
+  border-radius: 50%;
+}
+
+.custom-radio.active:before,
+.custom-checkbox.active:before {
+  background: var(--highlight);
+}

@@ -1,0 +1,16 @@
+.card__thumbnail {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+  border-start-start-radius: .5rem;
+  border-start-end-radius: .5rem;
+}
+
+.card__content {
+  border: 2px solid lightgray;
+  border-top: 0;
+  border-end-start-radius: .5rem;
+  border-end-end-radius: .5rem;
+  padding: .25rem 1rem 1rem;
+}
