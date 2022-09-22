@@ -1,6 +1,6 @@
 import './Card.css'
 
-export default function ({ img, children }) {
+const Card = function ({ img, children }) {
   return (
     <div className="card">
       <img src={img} className="card__thumbnail" />
@@ -10,3 +10,5 @@ export default function ({ img, children }) {
     </div>
   )
 }
+
+export default Card
