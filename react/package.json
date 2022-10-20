@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "cypress open"
+    "test": "cypress open",
+    "e2e": "start-server-and-test 'npm run dev' 5173 'cypress run'"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -19,6 +20,7 @@
     "@vitejs/plugin-react": "^2.1.0",
     "cypress": "^10.8.0",
     "cypress-axe": "^1.0.0",
+    "start-server-and-test": "^1.14.0",
     "vite": "^3.1.0"
   }
 }
