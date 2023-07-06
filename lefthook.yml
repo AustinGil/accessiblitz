@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      run: npx eslint {staged_files}
+      # files: git diff --name-only master
+      glob: "*.{js,ts,jsx,tsx}"
+    ts:
+      run: npx tsc

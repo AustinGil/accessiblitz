@@ -36,7 +36,10 @@ function App() {
             </div>
             <div className='switch-wrapper'>
               Do the thing:
-              <div className="switch" onClick={event => event.target.classList.toggle("active")}></div>
+              <div className="switch" onClick={event => {
+                // @ts-ignore
+                event.target.classList.toggle("active")
+              }}></div>
             </div>
           </div>
 
